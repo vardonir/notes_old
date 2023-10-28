@@ -9,8 +9,8 @@ baseurl: ""
 heading: zeNotes
 content: I also write stuff
 copyright:  
-  year: © 2023
-  msg: 
+  year: 2023
+  msg: Insert Footnote Here
 
 # Set title and content for private & broken link tooltop
 privatelinks:
@@ -31,7 +31,7 @@ preferences:
 # To enable a homepage, change the value to true and add content to _includes/Homepage.html
 # If enable : false, notes feed will be as homepage. 
   homepage: 
-    enabled: true ##If you need a homepage, change this to true and edit _includes/Homepage.html
+    enabled: false ##If you need a homepage, change this to true and edit _includes/Homepage.html
 
 encoding: utf-8
 
@@ -47,7 +47,7 @@ plugins:
 collections:
     notes:
       output: true
-      permalink: /note/:title
+      permalink: /:title
 
 markdown: kramdown
 
@@ -86,9 +86,8 @@ defaults:
 # their entries' file path in the `include:` list.
 #
 exclude:
-  - _notes/000 Inbox
-  - _notes/200 Private
-  - _notes/300 Templates
+  - _notes/Drafts
+  - _notes/Templates
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
